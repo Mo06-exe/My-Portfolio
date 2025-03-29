@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1" />
+        <style type ="text/css">
+            body {
+                margin-top: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                scroll-behavior: smooth;
+            }
+
+            .navbar {
+                top: 1vh;
+                float: center;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                z-index: 3;
+                width: 70vw;
+                height: 7vh;
+                background-color: white;
+                position: relative;
+                opacity: 1;
+                justify-content: center;
+                border-radius: 0 30px;
+                box-shadow: 0 5px 10px rgb(110, 4, 231);
+                left: 15vw;
+                right: 15vw;
+                scroll-behavior: smooth;
+                transform: scale(1);
+                transition-duration: 0.5s;
+            }
+
+            .navbar:hover {
+                box-shadow: 0 5px 10px;
+                transition-duration: 0.5s;
+                transform: scale(1.01);
+            }
+
+            .navbar > table {
+                float: center;
+            }
+
+            header {
+                justify-content: center;
+                align-items: center;
+                background-size: cover;
+                background-color: rgb(28, 2, 58);
+                width: 95vw;
+                height: 15vh;
+                margin: 0 auto;
+                box-sizing: border-box;
+                border-radius: 0 0 30px 30px;
+            }
+
+            .glow {
+                color: rgb(110, 4, 231);
+                text-shadow: 0 5px 10px rgb(110, 4, 231);
+            }
+
+            td > a {
+                text-decoration: none;
+                color: black;
+                padding: 30px;
+                transform: scaleX(1);
+                transition-duration: 0.5s;
+            }
+
+            td > a:hover {
+                transform: scaleX(1.01);
+                transition-duration: 0.5s;
+                color: rgb(110, 4, 231);
+                text-shadow: 5px 5px 10px rgb(110, 4, 231);
+            }
+
+            .abt {
+                height: 70vh;
+                width: 95vw;
+                background-color: rgb(28, 2, 58);
+                left: 1vw;
+                right: 1vw;
+                box-sizing: border-box;
+                margin: 0 auto;
+                border-radius: 40px;
+                transform: scale(1);
+                transition-duration: 0.5s;
+                justify-content: center;
+                padding: 40px;
+            }
+
+            .abt:hover {
+                transform: scale(1.03);
+                transition-duration: 0.5s;
+                box-shadow: 0 10px 10px rgb(110, 4, 231);
+            }
+
+            .abt > img {
+                float: right;
+                border: none;
+                width: 400px;
+                height: 450px;
+                border-radius: 30px;
+                transition-duration: 0.5s;
+                margin: 0 auto;
+            }
+
+            .abt > img:hover {
+                transition-duration: 0.5s;
+                box-shadow: 10px 10px 10px rgb(110, 4, 231);
+            }
+
+            .abt > h1 {
+                font-size: 35px;
+                font-weight: 300;
+                color: white;
+                align-items: center;
+                vertical-align: center;
+            }
+
+            .abt > p {
+                float: left;
+                color: white;
+                align-items: center;
+                vertical-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class = "navbar">
+                    <table>
+                        <tr>
+                            <td><a href = "home2.html">Home</span></a></td>
+                            <td><a href = "#"><span class = "glow">About</span></a></td>
+                            <td><a href = "Gallery.html">Gallery</a></td>
+                            <td><a href = "Contact.html">Contact</a></td>
+                        </tr>
+                    </table>
+            </div>
+        </header>
+        <br/>
+        <br/>
+        <div class = "abt">
+            
+                <h1>My name is Motoma Mogomotsi</h1>
+                <p>
+                    and I am a second year student at the University of Witwatersrand
+                    doing computer science;
+                </p>
+
+            <img src = "IMG-20240308-WA0016.jpg">
+        </div>
+        <br/>
+        <br/>
+    </body>
+</html>
