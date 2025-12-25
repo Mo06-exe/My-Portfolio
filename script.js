@@ -10,32 +10,37 @@ window.onload = function () {
     let charIndex = 0;
     let reverseIdx = 0;
     let isComplete = false;
-    let fullText = "";
 
-    function type() {
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+   async function type() {
         const box = document.getElementById("text");
         if (msgIndex < messages.length) {
             let currentMessage = messages[msgIndex];
 
             if (charIndex < currentMessage.length) {
                 box.innerHTML += currentMessage.charAt(charIndex);
-                fullText += currentMessage.charAt(charIndex);
                 charIndex++;
                 setTimeout(type, 65);
+                if(charIndex >= currentMessage.length) {
+                    isComplete = true;
+                }
             } else {
+                if(isComplete) {
+                    await sleep(1000);
+                    isComplete = false;
+                }
                 let idx = box.innerHTML.length;
 
-                // 
                 if (idx > 0) {
                     idx--;
                     reverseIdx++;
                     box.innerHTML = box.innerHTML.substring(0, charIndex - reverseIdx);
-                    setTimeout(type, 75);
+                    setTimeout(type, 55);
                 }
 
                 else {
-                    //box.innerHTML += "<br><br>";
-                    //fullText += "<br><br>";
+                    reverseIdx = 0;
                     msgIndex++;
                     charIndex = 0;
                     setTimeout(type, 500);
@@ -43,9 +48,12 @@ window.onload = function () {
 
             }
 
-        } else {
-            box.style.overflowY = "auto";
-            box.innerHTML = fullText;
+        } 
+        else {
+            msgIndex = 0;
+            charIndex = 0;
+            reverseIdx = 0;
+            setTimeout(type, 500);
         }
     }
 

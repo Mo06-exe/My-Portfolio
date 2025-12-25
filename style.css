@@ -229,3 +229,8 @@ svg:hover {
         width: 100%;
     }
 }
+
+.typing-text {
+    font-size: clamp(1em, 2.5vw, 1.3em);
+    min-height: 1.2em;
+}
