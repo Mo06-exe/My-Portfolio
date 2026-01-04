@@ -6,38 +6,6 @@ body {
     overflow-y: scroll;
 }
 
-.navbar {
-    top: 1vh;
-    float: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    z-index: 3;
-    width: 70vw;
-    height: 7vh;
-    background-color: white;
-    position: relative;
-    opacity: 1;
-    justify-content: center;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 5px 10px rgb(110, 4, 231);
-    left: 15vw;
-    right: 15vw;
-    scroll-behavior: smooth;
-    transform: scale(1);
-    transition-duration: 0.5s;
-}
-
-.navbar:hover {
-    box-shadow: 0 5px 10px;
-    transition-duration: 0.5s;
-    transform: scale(1.01);
-}
-
-.navbar > table {
-    float: center;
-}
-
 .intro {
     background-size: cover;
     width: 95vw;
@@ -59,36 +27,9 @@ body {
     font-weight: 300;
 }
 
-header {
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-color: rgb(28, 2, 58);
-    width: 95vw;
-    height: 15vh;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-radius: 0 0 30px 30px;
-}
-
 .glow {
     color: rgb(110, 4, 231);
     text-shadow: 0 5px 10px rgb(110, 4, 231);
-}
-
-td > a {
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    transform: scaleX(1);
-    transition-duration: 0.5s;
-}
-
-td > a:hover {
-    transform: scaleX(1.01);
-    transition-duration: 0.5s;
-    color: rgb(110, 4, 231);
-    text-shadow: 5px 5px 10px rgb(110, 4, 231);
 }
 
 .img {
@@ -97,25 +38,25 @@ td > a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 300vw;
+    width: 300vw;
     z-index: 2;
-    border-radius: 30px;
+    border-radius: 30vw;
     margin: 0;
-    margin-left: 100px;
+    margin-left: 100vw;
     border: none;
 }
 
 .intro-content {
-    font-size: 35px;
+    font-size: 35vw;
     font-weight: 300;
     color: black;
 }
 
 .button {
-    border-radius: 30px;
+    border-radius: 30vw;
     border: none;
-    height: 50px;
+    height: 50vw;
     color: white;
     background-color: rgb(110, 4, 231);
     transform: scale(1);
@@ -178,8 +119,15 @@ to {
 }
 
 p {
-    font-size: 23px;
-    font-weight: 10px;
+    font-size: 17px;
+    font-weight: 6px;
+}
+
+@media (min-width: 780px) {
+    p {
+        font-size: 23px;
+        font-weight: 10px;
+    }
 }
 
 .intro > img {
@@ -206,7 +154,7 @@ svg:hover {
 
 .project-card {
     display: flex; 
-    gap: 20px;     
+    gap: 20vw;     
     align-items: center; 
     border: 1px solid #ddd;
     padding: 15px;
@@ -215,7 +163,7 @@ svg:hover {
 }
 
 .project-img {
-    width: 200px; 
+    width: 200vw; 
     height: auto;
     object-fit: cover;
 }
@@ -234,3 +182,72 @@ svg:hover {
     font-size: clamp(1em, 2.5vw, 1.3em);
     min-height: 1.2em;
 }
+
+.globe-gif {
+    float: right;
+    width: 25vw;
+    height: 25vw;
+}
+
+@media (min-width: 600px) {
+    .navbar {
+        top: 1vh;
+        float: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        z-index: 3;
+        width: 70vw;
+        height: 7vh;
+        background-color: white;
+        position: relative;
+        opacity: 1;
+        justify-content: center;
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0 5px 10px rgb(110, 4, 231);
+        left: 15vw;
+        right: 15vw;
+        scroll-behavior: smooth;
+        transform: scale(1);
+        transition-duration: 0.5s;
+    }
+    
+    .navbar:hover {
+        box-shadow: 0 5px 10px;
+        transition-duration: 0.5s;
+        transform: scale(1.01);
+    }
+    
+    .navbar > table {
+        float: center;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-color: rgb(28, 2, 58);
+        width: 95vw;
+        height: 15vh;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border-radius: 0 0 30px 30px;
+    }
+
+    td > a {
+        text-decoration: none;
+        color: black;
+        padding: 30px;
+        transform: scaleX(1);
+        transition-duration: 0.5s;
+    }
+    
+    td > a:hover {
+        transform: scaleX(1.01);
+        transition-duration: 0.5s;
+        color: rgb(110, 4, 231);
+        text-shadow: 5px 5px 10px rgb(110, 4, 231);
+    }
+    
+}
+
