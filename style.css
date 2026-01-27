@@ -79,7 +79,7 @@ body {
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
     width: 90vw;
-    height: 75vh;
+    height: auto;
     color: black;
     margin-left: 5vw;
     margin-right: 5vw;
