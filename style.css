@@ -22,6 +22,7 @@ body {
     vertical-align: center;
 }
 
+
 .h1 {
     font-size: 35px;
     font-weight: 300;
@@ -130,8 +131,16 @@ p {
     }
 }
 
-.intro > img {
-    transform: scale(3);
+.profile-pic {
+    width: 25vw;
+    height: 55vh;
+    border-radius: 30px;
+    transition-duration: 1s;
+}
+
+.profile-pic:hover {
+    box-shadow: 0 5px 10px rgb(110, 4, 231);
+    transition-duration: 1s;
 }
 
 .socials {
