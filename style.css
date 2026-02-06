@@ -9,7 +9,7 @@ body {
 .intro {
     background-size: cover;
     width: 95vw;
-    height: 75vh;
+    height: 80vh;
     padding: 100px;
     left: 0;
     right: 0;
@@ -89,15 +89,15 @@ body {
 }
 
 @keyframes appear {
-from {
-    opacity: 0.5;
-    scale: 0.5;
-}
+    from {
+        opacity: 0.5;
+        scale: 0.5;
+    }
 
-to {
-    opacity: 1;
-    scale: 1;
-}
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 
 }
 
@@ -162,9 +162,9 @@ svg:hover {
 }
 
 .project-card {
-    display: flex; 
-    gap: 20vw;     
-    align-items: center; 
+    display: flex;
+    gap: 20vw;
+    align-items: center;
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
@@ -172,7 +172,7 @@ svg:hover {
 }
 
 .project-img {
-    width: 200vw; 
+    width: 200vw;
     height: auto;
     object-fit: cover;
 }
@@ -180,8 +180,9 @@ svg:hover {
 
 @media (max-width: 600px) {
     .project-card {
-        flex-direction: column; 
+        flex-direction: column;
     }
+
     .project-img {
         width: 100%;
     }
@@ -220,14 +221,14 @@ svg:hover {
         transform: scale(1);
         transition-duration: 0.5s;
     }
-    
+
     .navbar:hover {
         box-shadow: 0 5px 10px;
         transition-duration: 0.5s;
         transform: scale(1.01);
     }
-    
-    .navbar > table {
+
+    .navbar>table {
         float: center;
     }
 
@@ -243,24 +244,101 @@ svg:hover {
         border-radius: 0 0 30px 30px;
     }
 
-    td > a {
+    td>a {
         text-decoration: none;
         color: black;
         padding: 30px;
         transform: scaleX(1);
         transition-duration: 0.5s;
     }
-    
-    td > a:hover {
+
+    td>a:hover {
         transform: scaleX(1.01);
         transition-duration: 0.5s;
         color: rgb(110, 4, 231);
         text-shadow: 5px 5px 10px rgb(110, 4, 231);
     }
-    
+
 }
 
-.project-card > video {
+.project-card>video {
     width: 100%;
     height: 35vw;
+}
+
+.card {
+    width: 240px;
+    height: 250px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(110, 4, 231);
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card:hover {
+    border-color: rgb(110, 4, 231);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.skills {
+    background-size: cover;
+    width: 95vw;
+    height: 83vh;
+    background-color: rgb(28, 2, 58);
+    color: white;
+    border-radius: 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+}
+
+.skills-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
