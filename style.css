@@ -270,13 +270,16 @@ svg:hover {
     width: 240px;
     height: 250px;
     border-radius: 20px;
-    background: #f5f5f5;
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
     padding: 1.8rem;
     border: 2px solid #c3c6ce;
     transition: 0.5s ease-out;
     overflow: visible;
 }
+
 
 .card-details {
     color: black;
@@ -314,6 +317,7 @@ svg:hover {
 .card:hover {
     border-color: rgb(110, 4, 231);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+
 }
 
 .card:hover .card-button {
@@ -342,3 +346,14 @@ svg:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.skills-container  svg {
+    fill: white;
+    transition-duration: 0.5s;
+    transform: scale(0.8);
+}
+
+.skills-container  svg:hover {
+    fill: rgb(110, 4, 231);
+    transition-duration: 0.5s;
+} 
