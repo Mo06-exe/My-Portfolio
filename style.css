@@ -146,6 +146,12 @@ p {
 .socials {
     height: 5vh;
     width: 5vw;
+    display: flex;
+    gap: 30px;
+}
+
+.socials > ul {
+    list-style: none;
 }
 
 svg {
@@ -163,16 +169,17 @@ svg:hover {
 
 .project-card {
     display: flex;
-    gap: 20vw;
-    align-items: center;
-    border: 1px solid #ddd;
+    gap: 10vw;
+    align-items: flex-start;
+    border: 3px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
     background-color: white;
+    border-radius: 30px;
 }
 
 .project-img {
-    width: 200vw;
+    width: 40%;
     height: auto;
     object-fit: cover;
 }
@@ -228,8 +235,10 @@ svg:hover {
         transform: scale(1.01);
     }
 
-    .navbar>table {
-        float: center;
+    .navbar > ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
     }
 
     header {
@@ -244,7 +253,7 @@ svg:hover {
         border-radius: 0 0 30px 30px;
     }
 
-    td>a {
+    .navbar > ul > li > a {
         text-decoration: none;
         color: black;
         padding: 30px;
@@ -252,18 +261,13 @@ svg:hover {
         transition-duration: 0.5s;
     }
 
-    td>a:hover {
+    .navbar > ul > li > a:hover {
         transform: scaleX(1.01);
         transition-duration: 0.5s;
         color: rgb(110, 4, 231);
         text-shadow: 5px 5px 10px rgb(110, 4, 231);
     }
 
-}
-
-.project-card>video {
-    width: 100%;
-    height: 35vw;
 }
 
 .card {
@@ -408,5 +412,12 @@ svg:hover {
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
+}
+
+.socials > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
 }
 

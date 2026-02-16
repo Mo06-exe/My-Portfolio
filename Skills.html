@@ -1,109 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Skills | Mogomotsi Motoma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
-        <div class="navbar">
-            <table>
-                <tr>
-                    <td><a href="index.html">Home</a></td>
-                    <td><a href="Projects.html">Projects</a></td>
-                    <td><a href="Skills.html"><span class="glow">Skills</span></a></td>
-                    <td><a href="About.html">About</a></td>
-                </tr>
-            </table>
-        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="#"><span class="glow">Skills</span></a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
     </header>
     <br />
     <br />
 
+    <main>
 
-<div class="overlay" id="overlay"></div>
-
-<div class="modal" id="modal">
-  <button class="close-btn" id="closeModal">&times;</button>
-  <h2 id="modalTitle"></h2>
-  <p id="modalContent"></p>
-</div>
+        <!-- Skills Section -->
+        <section class="skills">
 
 
-    <div class="skills">
-        <div class="skills-container">
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">HTML</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
+            <div class="skills-container">
+
+                <!-- Each card becomes an article -->
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">HTML</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">CSS</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">JavaScript</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">Python</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">C++</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">Java</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">SQL</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-details">
+                        <h2 class="text-title">Android Studio</h2>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button">More info</button>
+                </article>
+
             </div>
+        </section>
 
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">CSS</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
+    </main>
 
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">JavaScript</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
+    <!-- Modal (dialog content) -->
+    <div class="overlay" id="overlay"></div>
 
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">Python</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
+    <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="close-btn" id="closeModal" aria-label="Close modal">&times;</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalContent"></p>
+    </section>
 
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">C++</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
-
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">JAVA</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
-
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">SQL</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
-
-            <div class="card">
-                <div class="card-details">
-                    <p class="text-title">Android Studio</p>
-                    <p class="text-body">Here are the details of the card</p>
-                </div>
-                <button class="card-button">More info</button>
-            </div>
-
-        </div>
-
-    </div>
-
-    <script src ="SkillsScript.js"></script>
+    <script src="SkillsScript.js"></script>
 </body>
 
 </html>
