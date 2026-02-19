@@ -186,6 +186,8 @@ svg:hover {
     transition-duration: 0.8s;
     box-sizing: border-box;
     border: 2px solid #ddd;
+    transform: scale(1);
+    transition-duration: 1s;
 }
 
 .project-card.alt {
@@ -208,6 +210,12 @@ svg:hover {
     opacity: 0.6;
     justify-content: center;
     border-radius: 30px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;
+    box-shadow: 10px 5px 10px rgb(110, 4, 231);
 }
 
 
@@ -349,7 +357,6 @@ svg:hover {
 .card:hover {
     border-color: rgb(110, 4, 231);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-
 }
 
 .card:hover .card-button {
@@ -447,5 +454,12 @@ svg:hover {
     display: flex;
     gap: 30px;
     padding: 0;
+}
+
+.cv-btn {
+    border-radius: 30px;
+    fill: none;
+    border: 3px solid rgb(110, 4, 231);
+    size: 30px;
 }
 
