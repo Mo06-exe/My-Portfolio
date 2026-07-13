@@ -13,7 +13,7 @@ const skillInfo = {
   JavaScript: "Used to add interactivity and dynamic behavior to web pages, including DOM manipulation, event handling, and basic client-side logic.",
   Python: "Used for scripting, problem-solving, and data analysis. Familiar with libraries such as pandas, numpy and applying Python to real-world computational tasks.",
   "C++": "Used to understand core programming concepts such as memory management, data structures, and performance-oriented problem solving.",
-  JAVA: "Primarily used for object-oriented programming and Android application development, with a strong focus on clean code and logical design.",
+  Java: "Primarily used for object-oriented programming and Android application development, with a strong focus on clean code and logical design.",
   SQL: "Used to design and query relational databases, write structured queries, and manage application data efficiently.",
   "Android Studio": "Used as the main development environment for building Android applications, including UI design, app logic, and debugging."
 };
@@ -38,3 +38,10 @@ function closeModal() {
 
 closeBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+
+// Close on Escape key, and return focus to the button that opened it
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("active")) {
+    closeModal();
+  }
+});

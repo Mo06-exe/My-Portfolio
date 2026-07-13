@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>About | Mogomotsi Motoma</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/style.css">
@@ -10,6 +11,10 @@
 <body>
     <header>
         <nav class="navbar">
+            <div style="display:flex; align-items:center; gap:16px;">
+                <div class="term-dots"><span></span><span></span><span></span></div>
+                <span class="prompt">mo@portfolio:~/about</span>
+            </div>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="Projects.html">Projects</a></li>
@@ -18,37 +23,36 @@
             </ul>
         </nav>
     </header>
-    <br />
-    <br />
-    <section class="intro">
-        <div style="display: flex;">
-            <div style="flex: 2;">
-                
-                    <h2 class="h1">
-                        About Me
-                    </h2>
+    <section class="about-card">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <div style="flex: 2; min-width: 260px;">
 
-                    <p>
-                        I am a Computer Science student with a strong interest in software development and problem
-                        solving. I enjoy building structured, scalable systems and
-                        understanding how technology works under the hood. My academic background has strengthened my
-                        foundation in algorithms, data structures, and computational thinking.
+                <h2 class="h1"><span class="prompt">cat</span> about.md</h2>
+                <br />
+                <p>
+                    I am a Computer Science student with a strong interest in software development and problem
+                    solving. I enjoy building structured, scalable systems and
+                    understanding how technology works under the hood. My academic background has strengthened my
+                    foundation in algorithms, data structures, and computational thinking.
 
-                    </p>
+                </p>
 
-                    <p>
-                        I am particularly interested in backend development and cybersecurity. I continuously improve my
-                        technocal skills by building projects, exploring new technologies, and refining my understanding
-                        of core computer science principles.
-                    </p>
+                <p>
+                    I am particularly interested in backend development and cybersecurity. I continuously improve my
+                    technical skills by building projects, exploring new technologies, and refining my understanding
+                    of core computer science principles.
+                </p>
 
             </div>
-            <div style="flex: 1;">
-                <img src="../assets/Profile.jpeg" class="profile-pic" >
+            <div style="flex: 1; min-width: 200px;">
+                <img src="../assets/Profile.jpeg" class="profile-pic" alt="Portrait of Mogomotsi Motoma">
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <p class="prompt">cd ../</p>
+    </footer>
 </body>
 
 </html>
